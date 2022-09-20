@@ -1,0 +1,37 @@
+.inner {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.inner>* {
+    flex: 1;
+    gap: 30px;
+}
+
+h1 {
+    padding: 30px 0;
+    text-align: center;
+}
+
+nav {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+nav>ul {
+    display: flex;
+    margin: 0 auto;
+    width: 1200px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+nav>ul>li {
+    flex: 1;
+    line-height: 60px;
+}
+
+nav>ul>li>a {
+    display: block;
+}
