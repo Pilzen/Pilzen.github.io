@@ -24,3 +24,8 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
     line-height: 1;
 }
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}

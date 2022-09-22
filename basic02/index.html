@@ -11,45 +11,108 @@
 </head>
 
 <body>
-    <header>
-        <h1>
-            <a href="/">
-                <img src="./images/grafflogo.png" alt="">
-            </a>
-        </h1>
-        <nav>
-            <ul>
-                <li><a href="">menu01</a></li>
-                <li><a href="">menu02</a></li>
-                <li><a href="">menu03</a></li>
-                <li><a href="">menu04</a></li>
-                <li><a href="">menu05</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="main__visual">
-            <div class="inner">
-                <h2>Lorem ipsum dolor sit.</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum dignissimos quisquam incidunt amet
-                    excepturi aspernatur laudantium ex eum repudiandae eligendi.</p>
-            </div>
-        </section>
-        <section class="main__content">
-            <div class="inner">
-                <figure>
-                    <img src="./images/lesedilarona01.jpg" alt="">
-                </figure>
-                <figure>
-                    <img src="./images/lesedilarona02.jpg" alt="">
-                </figure>
-                <figure>
-                    <img src="./images/lesedilarona03.jpg" alt="">
-                </figure>
-            </div>
-        </section>
-    </main>
-    <footer>&copy; Lee</footer>
+    <div class="wrapper">
+        <header>
+            <h1>
+                <a href="/">
+                    <img src="./images/grafflogo.png" alt="">
+
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="">menu01</a></li>
+                    <li><a href="">menu02</a></li>
+                    <li><a href="">menu03</a></li>
+                    <li><a href="">menu04</a></li>
+                    <li><a href="">menu05</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="main_visual">
+                <div class="slogan">
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Modi, quo.</p>
+                </div>
+            </section>
+            <section class="main_content">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Modi, quo.</p>
+                <div class="inner">
+                    <figure>
+                        <img src="./images/lesedilarona01.jpg" alt="회사, 제품이름 등">
+                        <strong>lesedilarona</strong>
+                        <a href="">구매하기</a>
+                    </figure>
+                    <figure>
+                        <img src="./images/lesedilarona02.jpg" alt="회사, 제품이름 등">
+                        <strong>lesedilarona</strong>
+                        <a href="">더빨리 구매하기</a>
+                    </figure>
+                    <figure>
+                        <img src="./images/lesedilarona03.jpg" alt="회사, 제품이름 등">
+                        <strong>lesedilarona</strong>
+                        <a href="">구매하기</a>
+                    </figure>
+                </div>
+            </section>
+        </main>
+        <footer>
+            &copy; Lee 20220922.
+        </footer>
+    </div>
 </body>
 
 </html>
+
+<!--      교육내용
+box-sizing : css reset에 있어 확인 필요
+box는 기본 속성이 auto
+ctrl+/ comment 처리 (css에서)
+<a> 는 box가 아니다
+flex: 1; 똑같이 분배 등 분배
+display: block; 박스로 만듬. 선택이 가능 width auto 기능
+font-size: 0;
+background image는 공간을 차지 하지 않는다. 속성 repeat, 원래 size 대로, 위쪽 끝에서부터 반복된다. Box 높이를 조절하면
+높이를 안주 는게 rule. 
+
+background: url(../images/mainvisual01.jpg) no-repeat center center/cover; 좌우 중앙, 아래위 중앙, cover는 백그라운드
+다 채우라는 명령
+
+justify-content: center; 좌우 방향으로 가운데 배치
+align-items: center; 상하 가운데 배치
+font-weight: 700; reset font 참조
+text-shadow: 0 0 2px #000; 볼륨감 표현
+
+margin은 아래 방향으로 준다. 위로 주면 겹친다
+section과 같은 큰 박스에 갭을 줄 경우 padding으로 아래 위로 뛰운다. margin (p, h2 등 적용)은 아니다
+
+inline 특성은 좌우 4px 정도 공간이 있다
+
+reset.css 
+vertical-align: middle; 이미지 사이 틈새 (4px 젇오)를 제거
+    max-width:  100%; 최대한 커져도 100% 넘지 마라 (이미지 3개 가로 배치시 유용)
+
+이미지 가로 gap은 30px
+이미지 밐으로 margin은 15px로 띄움
+
+text, strong은 inline으로 상하 margin padding 적용 안됨 좌우만 가능 width height도 안됨
+display: block; 박스로 변환하여 margin을 줄 수 있음
+
+박스를 가운데 옮길때
+.main_content a {
+    display: block;
+    background: #000;
+    width: 150px;
+    margin: 0 auto;
+}
+
+inline block으로 만들기 (크기는 글장에 따라 변환)
+.main_content a {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+}
+-->
