@@ -1,0 +1,62 @@
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.top_banner {
+    padding: 40px;
+    background: #f7f7f7;
+}
+
+.top_banner .inner {
+    position: relative;
+}
+
+.top_banner i {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 30px;
+}
+
+.top_banner h2 {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+.top_banner a {
+    padding: 5px;
+    background: #333;
+    color: #fff;
+    margin: 0 0 0 5px;
+}
+
+header h1 {
+    font-size: 0;
+}
+
+header .inner {
+    display: flex;
+    justify-content: space-between;
+    line-height: 100px;
+}
+
+header .inner ul {
+    display: flex;
+    gap: 40px;
+}
+
+header .inner ul>li {
+    position: relative;
+}
+
+header .inner ul>li~li::before {
+    content: "";
+    position: absolute;
+    top: 44px;
+    left: -20px;
+    width: 2px;
+    height: 12px;
+    background: #666;
+}
