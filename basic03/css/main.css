@@ -60,3 +60,112 @@ header .inner ul>li~li::before {
     height: 12px;
     background: #666;
 }
+
+/* .test_hover01 .inner {
+    display: flex;
+    gap: 30px;
+}
+
+.test_hover01 inner figure {
+    flex: 1;
+    overflow: hidden;
+}
+
+.test_hover01 .inner figure:hover img {
+    transition: 0.5s;
+}
+
+.test_hover01 .inner figure:hover img {
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+.test_hover01 inner .box {
+    overflow: hidden;
+}
+
+
+.test_hover02 .inner {
+    display: flex;
+    gap: 30px;
+}
+
+.test_hover02 .inner figure {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+}
+
+.test_hover02 .inner figure .cart {
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    font-size: 50px;
+    transition: 0.5s;
+}
+
+.test_hover02 .inner figure:hover .cart {
+    bottom: 0;
+    right: 0;
+}
+
+.test_hover03 {
+    padding: 100px 0 100px;
+}
+
+.test_hover03 .inner {
+    display: flex;
+    gap: 30px;
+}
+
+.test_hover03 figure {
+    position: relative;
+    overflow: hidden;
+}
+
+.test_hover03 figure .txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 0 20px;
+}
+
+.test_hover03 figure .txt::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #333;
+    transition: 0.5s;
+}
+
+.test_hover03 figure:hover .txt::before {
+    left: -400px;
+}
+
+.test_hover03 figure .txt::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -400px;
+    width: 100%;
+    height: 2px;
+    background: #333;
+    transition: 0.5s 0.5s;
+}
+
+.test_hover03 figure:hover .txt::after {
+    left: 0;
+}
+
+.test_hover03 figure span {
+    opacity: 0;
+    transition: 0.5s 1s;
+}
+
+.test_hover03 figure:hover span {
+    opacity: 1;
+} */

@@ -7,8 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/main.css">
     <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+
+
 
 </head>
 
@@ -52,6 +56,84 @@
                 </div>
             </div>
         </header>
+        <main>
+            <section class="main_visual">
+                <div class="class_slide">
+                    <figure>
+                        <img src="./img/lesedilarona01.jpg" alt="">
+                    </figure>
+                    <figure>
+                        <img src="./img/lesedilarona02.jpg" alt="">
+                    </figure>
+                    <figure>
+                        <img src="./img/lesedilarona03.jpg" alt="">
+                    </figure>
+                </div>
+
+            </section>
+            <!-- <section class="test_hover01">
+                <div class="inner">
+                    <figure>
+                        <div class="box">
+                            <img src="./img/lesedilarona01.jpg" alt="">
+                            <div>제품01</div>
+                        </div>
+                    </figure>
+                    <figure>
+                        <img src="./img/lesedilarona02.jpg" alt="">
+                        <div>제품02</div>
+                    </figure>
+                    <figure>
+                        <img src="./img/lesedilarona03.jpg" alt="">
+                        <div>제품03</div>
+                    </figure>
+                </div>
+            </section>
+            <section class="test_hover02">
+                <div class="inner">
+                    <figure>
+                        <img src="./img/lesedilarona01.jpg" alt="">
+                        <div class="cart">
+                            <i class="xi-cart"></i>
+                        </div>
+                    </figure>
+                    <figure>
+                        <img src="./img/lesedilarona02.jpg" alt="">
+                        <div class="cart">
+                            <i class="xi-cart"></i>
+                        </div>
+                    </figure>
+                    <figure>
+                        <img src="./img/lesedilarona03.jpg" alt="">
+                        <div class="cart">
+                            <i class="xi-cart"></i>
+                        </div>
+                    </figure>
+                </div>
+            </section>
+            <section class="test_hover03">
+                <div class="inner">
+                    <figure>
+                        <img src="./img/lesedilarona01.jpg" alt="">
+                        <div class="txt">
+                            <span>여기 어 나올 것임!</span>
+                        </div>
+                    </figure>
+                    <figure>
+                        <img src="./img/lesedilarona01.jpg" alt="">
+                        <div class="txt">
+                            <span>여기 어 나올 것임!</span>
+                        </div>
+                    </figure>
+                    <figure>
+                        <img src="./img/lesedilarona01.jpg" alt="">
+                        <div class="txt">
+                            <span>여기 어 나올 것임!</span>
+                        </div>
+                    </figure>
+                </div>
+            </section> -->
+        </main>
     </div>
     <script src="./js/main.js"></script>
 
@@ -71,7 +153,73 @@ popup창 위치를 이동은  transform을 이용한다
 Jqurry Download 1.x를 마우스 오른 버튼으로 js 디렉터리에 Link 한다
 document.querySelector = $
 
+https://kenwheeler.github.io/slick/ 유용한 소스 개발자
 
 참고: https://c1jang.github.io/project01/
+
+참고 coding: github.com/desipossa/303_html
+
+ctrl+shit+r
+
+    overflow: hidden; 넘치는 부분은 제거
+
+    .test_hover01 .inner figure:hover img {
+    transition: 0.5s;
+}
+
+.test_hover01 .inner figure:hover img {
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+
+<section class="test_hover02">
+                <div class="inner">
+                    <figure>
+                        <img src="./img/lesedilarona01.jpg" alt="">
+                        <div class="cart">
+                            <i class="xi-cart"></i>
+                        </div>
+                    </figure>
+                    <figure>
+                        <img src="./img/lesedilarona02.jpg" alt="">
+                        <div class="cart">
+                            <i class="xi-cart"></i>
+                        </div>
+                    </figure>
+                    <figure>
+                        <img src="./img/lesedilarona03.jpg" alt="">
+                        <div class="cart">
+                            <i class="xi-cart"></i>
+                        </div>
+                    </figure>
+                </div>
+            </section>
+
+
+     
+.test_hover02 .inner {
+    display: flex;
+    gap: 30px;
+}
+
+.test_hover02 .inner figure {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+}
+
+.test_hover02 .inner .cart {
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+    font-size: 50px;
+    transition: 0.5s;
+}
+
+.test_hover02 .inner figure:hover .cart {
+    bottom: 0;
+}       
+
 
 -->
