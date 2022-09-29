@@ -61,111 +61,143 @@ header .inner ul>li~li::before {
     background: #666;
 }
 
-/* .test_hover01 .inner {
-    display: flex;
-    gap: 30px;
-}
-
-.test_hover01 inner figure {
-    flex: 1;
-    overflow: hidden;
-}
-
-.test_hover01 .inner figure:hover img {
-    transition: 0.5s;
-}
-
-.test_hover01 .inner figure:hover img {
-    transform: scale(1.5);
-    transition: 0.5s;
-}
-
-.test_hover01 inner .box {
-    overflow: hidden;
-}
-
-
-.test_hover02 .inner {
-    display: flex;
-    gap: 30px;
-}
-
-.test_hover02 .inner figure {
+.main_visual {
     position: relative;
-    flex: 1;
-    overflow: hidden;
 }
 
-.test_hover02 .inner figure .cart {
+.main_visual .num {
     position: absolute;
-    bottom: -50px;
-    right: -50px;
-    font-size: 50px;
-    transition: 0.5s;
+    top: 100px;
+    left: 50%;
+    margin: 0 0 0 600px;
+    transform: translateX(-100%);
+    font-size: 100px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+
 }
 
-.test_hover02 .inner figure:hover .cart {
-    bottom: 0;
-    right: 0;
+
+.main_visual .slick-track {
+    transition-duration: 5ms;
 }
 
-.test_hover03 {
-    padding: 100px 0 100px;
+
+.main_visual .main_slide figure {
+    height: 700px;
 }
 
-.test_hover03 .inner {
-    display: flex;
-    gap: 30px;
+.main_visual .main_slide .item01 {
+    background: url(../img/mainvisual01.jpg) no-repeat center/cover;
 }
 
-.test_hover03 figure {
-    position: relative;
-    overflow: hidden;
+.main_visual .main_slide .item02 {
+    background: url(../img/mainvisual02.jpg) no-repeat center/cover;
 }
 
-.test_hover03 figure .txt {
+.main_visual .main_slide .item03 {
+    background: url(../img/mainvisual03.jpg) no-repeat center/cover;
+}
+
+.main_visual .main_slide .slick-arrow {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 10px 0 20px;
+    z-index: 999;
+
+    font-size: 0;
+    /* previous and next button을 보기에서 지움 */
+    width: 100px;
+    height: 100px;
+
+    background: transparent;
+    /* 사각박스 투명하게 */
+    border: none;
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
 }
 
-.test_hover03 figure .txt::before {
+.main_visual .main_slide .slick-prev {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    margin: 0 0 0 -700px;
+}
+
+.main_visual .main_slide .slick-next {
+    transform: translate(-50%, -50%) rotate(135deg);
+    margin: 0 0 0 700px;
+}
+
+.main_visual .main_slide .slick-dots {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main_visual .main_slide .slick-dots li {
+    display: inline-block;
+    font-size: 0;
+    padding: 10px 0;
+    /* Click 범위를 크게 함 */
+}
+
+.main_visual .main_slide .slick-dots li button {
+    position: relative;
+    width: 60px;
+    height: 4px;
+    background: #333;
+    border: none;
+    margin: 0 4px;
+}
+
+
+.main_visual .main_slide .slick-dots li button::after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
+    width: 0;
+    height: 100%;
+    background: #f00;
+    /* transition: 2s; */
+}
+
+.main_visual .main_slide .slick-dots li.slick-active button::after {
     width: 100%;
-    height: 2px;
-    background: #333;
-    transition: 0.5s;
+    transition: 2s;
+    /* 버튼 애니메이션 */
 }
 
-.test_hover03 figure:hover .txt::before {
-    left: -400px;
+
+.main_visual .main_slide .slick-dots li.slick-active button {
+    /* background: #f00; */
 }
 
-.test_hover03 figure .txt::after {
-    content: "";
+
+.main_visual .btn {
     position: absolute;
     bottom: 0;
-    left: -400px;
-    width: 100%;
-    height: 2px;
-    background: #333;
-    transition: 0.5s 0.5s;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    display: flex;
+    background: tomato;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+
 }
 
-.test_hover03 figure:hover .txt::after {
-    left: 0;
+.main_visual .btn li {
+    flex: 1;
 }
 
-.test_hover03 figure span {
-    opacity: 0;
-    transition: 0.5s 1s;
+.main_visual .btn li.on {
+    background: #f00;
 }
 
-.test_hover03 figure:hover span {
-    opacity: 1;
-} */
+.main_visual .btn li~li {
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}

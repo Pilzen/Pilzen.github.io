@@ -58,81 +58,18 @@
         </header>
         <main>
             <section class="main_visual">
-                <div class="class_slide">
-                    <figure>
-                        <img src="./img/lesedilarona01.jpg" alt="">
-                    </figure>
-                    <figure>
-                        <img src="./img/lesedilarona02.jpg" alt="">
-                    </figure>
-                    <figure>
-                        <img src="./img/lesedilarona03.jpg" alt="">
-                    </figure>
+                <div class="main_slide">
+                    <figure class="item01">01</figure>
+                    <figure class="item02">02</figure>
+                    <figure class="item03">03</figure>
                 </div>
-
+                <div class="num">number or character</div>
+                <ul class="btn">
+                    <li class="on"><i class="xi-heart"></i> Lorem, ipsum dolor sit amet</li>
+                    <li><i class="xi-heart"></i> Lorem, ipsum dolor sit amet</li>
+                    <li><i class="xi-heart"></i> Lorem, ipsum dolor sit amet</li>
+                </ul>
             </section>
-            <!-- <section class="test_hover01">
-                <div class="inner">
-                    <figure>
-                        <div class="box">
-                            <img src="./img/lesedilarona01.jpg" alt="">
-                            <div>제품01</div>
-                        </div>
-                    </figure>
-                    <figure>
-                        <img src="./img/lesedilarona02.jpg" alt="">
-                        <div>제품02</div>
-                    </figure>
-                    <figure>
-                        <img src="./img/lesedilarona03.jpg" alt="">
-                        <div>제품03</div>
-                    </figure>
-                </div>
-            </section>
-            <section class="test_hover02">
-                <div class="inner">
-                    <figure>
-                        <img src="./img/lesedilarona01.jpg" alt="">
-                        <div class="cart">
-                            <i class="xi-cart"></i>
-                        </div>
-                    </figure>
-                    <figure>
-                        <img src="./img/lesedilarona02.jpg" alt="">
-                        <div class="cart">
-                            <i class="xi-cart"></i>
-                        </div>
-                    </figure>
-                    <figure>
-                        <img src="./img/lesedilarona03.jpg" alt="">
-                        <div class="cart">
-                            <i class="xi-cart"></i>
-                        </div>
-                    </figure>
-                </div>
-            </section>
-            <section class="test_hover03">
-                <div class="inner">
-                    <figure>
-                        <img src="./img/lesedilarona01.jpg" alt="">
-                        <div class="txt">
-                            <span>여기 어 나올 것임!</span>
-                        </div>
-                    </figure>
-                    <figure>
-                        <img src="./img/lesedilarona01.jpg" alt="">
-                        <div class="txt">
-                            <span>여기 어 나올 것임!</span>
-                        </div>
-                    </figure>
-                    <figure>
-                        <img src="./img/lesedilarona01.jpg" alt="">
-                        <div class="txt">
-                            <span>여기 어 나올 것임!</span>
-                        </div>
-                    </figure>
-                </div>
-            </section> -->
         </main>
     </div>
     <script src="./js/main.js"></script>
@@ -144,8 +81,29 @@
 
 </html>
 
-<!-- Pop업창 만들기
-height: 100vh; 창의 크기 만큼 채우기
+<!-- 슬라이드  만들기
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    height: 100vh; 창의 크기 만큼 채우기
 button은 inline 속성
 Absolute의 기준은 왼쪽 위 모서리이다
 popup창 위치를 이동은  transform을 이용한다
@@ -167,59 +125,6 @@ ctrl+shit+r
     transition: 0.5s;
 }
 
-.test_hover01 .inner figure:hover img {
-    transform: scale(1.5);
-    transition: 0.5s;
-}
-
-
-<section class="test_hover02">
-                <div class="inner">
-                    <figure>
-                        <img src="./img/lesedilarona01.jpg" alt="">
-                        <div class="cart">
-                            <i class="xi-cart"></i>
-                        </div>
-                    </figure>
-                    <figure>
-                        <img src="./img/lesedilarona02.jpg" alt="">
-                        <div class="cart">
-                            <i class="xi-cart"></i>
-                        </div>
-                    </figure>
-                    <figure>
-                        <img src="./img/lesedilarona03.jpg" alt="">
-                        <div class="cart">
-                            <i class="xi-cart"></i>
-                        </div>
-                    </figure>
-                </div>
-            </section>
-
-
-     
-.test_hover02 .inner {
-    display: flex;
-    gap: 30px;
-}
-
-.test_hover02 .inner figure {
-    position: relative;
-    flex: 1;
-    overflow: hidden;
-}
-
-.test_hover02 .inner .cart {
-    position: absolute;
-    bottom: -100px;
-    right: 0;
-    font-size: 50px;
-    transition: 0.5s;
-}
-
-.test_hover02 .inner figure:hover .cart {
-    bottom: 0;
-}       
 
 
 -->
