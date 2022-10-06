@@ -75,7 +75,6 @@ header .inner ul>li~li::before {
     font-weight: 700;
     color: #fff;
     text-shadow: 0 0 3px #000;
-
 }
 
 
@@ -402,4 +401,117 @@ header .inner ul>li~li::before {
     background: #333;
     color: #fff;
     transform: translateY(2px);
+    filter: grayscale(1);
+}
+
+.main_ytp {
+    padding: 200px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.main_ytp h2 {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1em;
+    margin: 0 0 15px 0;
+}
+
+.main_ytp p {
+    font-size: 15px;
+    margin: 0 0 30px 0;
+}
+
+.main_ytp i {
+    padding: 5px;
+    border-radius: 50%;
+    margin: 0 0 0 10px;
+    background: #f00;
+    transform: translateY(2px);
+    color: #fff;
+}
+
+/* Product slide */
+
+.main_product {
+    padding: 100px 0;
+    text-align: center;
+
+}
+
+.main_product h2 {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1em;
+    margin: 0 0 15px 0;
+}
+
+.main_product p {
+    font-size: 15px;
+    margin: 0 0 15px 0;
+}
+
+.main_product figure {
+    padding: 0 15px;
+    /* Gap 불가 */
+}
+
+.main_product figure img {
+    margin: 0 0 30px 0;
+}
+
+.main_product .inner {
+    position: relative;
+}
+
+.main_product i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    background: #000;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+.main_product i:first-child {
+    margin: 0 0 0 -700px;
+}
+
+.main_product i:last-child {
+    margin: 0 0 0 700px;
+}
+
+.main_product .product_slide {
+    margin: 0 0 30px 0;
+}
+
+.main_product .dots {
+    display: flex;
+    justify-content: center;
+    font-size: 0;
+}
+
+.main_product .dots li {
+    position: relative;
+    width: 30px;
+    height: 20px;
+}
+
+.main_product .dots li::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 30%;
+    background: #ddd;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+}
+
+.main_product .dots li.on::after {
+    height: 100%;
 }
