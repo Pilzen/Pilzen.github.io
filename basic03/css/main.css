@@ -431,7 +431,7 @@ header .inner ul>li~li::before {
     color: #fff;
 }
 
-/* Product slide */
+/* Main Product slide */
 
 .main_product {
     padding: 100px 0;
@@ -515,3 +515,161 @@ header .inner ul>li~li::before {
 .main_product .dots li.on::after {
     height: 100%;
 }
+
+
+
+/* Tab */
+
+.main_customer {
+    padding: 100px 0;
+    background: #f8f8fa;
+}
+
+.main_customer .inner {
+    display: flex;
+    gap: 30px;
+}
+
+.main_customer .inner>div {
+    flex: 1;
+}
+
+.main_customer .tab_menu {
+    display: flex;
+    line-height: 40px;
+}
+
+.main_customer .tab_menu>li {
+    flex: 1;
+    padding: 0 0 0 20px;
+    background: #fd7e14;
+    color: #fff;
+    cursor: pointer;
+}
+
+.main_customer .tab_menu>li.on {
+    background: #000;
+}
+
+.main_customer .tab_menu>li~li {
+    border-left: 1px solid #fff;
+}
+
+.main_customer .left {
+    overflow: hidden;
+}
+
+.main_customer .tab_content>li {
+    /* display: none;
+    line-height: 45px; */
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+}
+
+.main_customer .tab_content>li.on {
+    /* display: block; */
+    visibility: visible;
+    height: auto;
+}
+
+.main_customer .tab_content>li li a {
+    display: block;
+    line-height: 40px;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* Footer */
+
+footer {
+    line-height: 80px;
+    background: #333;
+    color: #f8f8fa;
+}
+
+footer .top {
+    border-top: 1px solid red;
+}
+
+footer .inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .inner ul {
+    display: flex;
+    gap: 30px;
+}
+
+footer address {
+    font-style: normal;
+}
+
+footer .customer_link li {
+    position: relative;
+}
+
+footer .customer_link li~li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 10px;
+    background: #f8f9fa;
+
+}
+
+footer .inner .sns {
+    gap: 10px;
+}
+
+footer .inner .sns i {
+    font-size: 20px;
+    padding: 10px;
+    background: tomato;
+    border-radius: 50%;
+}
+
+footer #link {
+    background: #668;
+    color: #ddd;
+    padding: 5px 20px;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.tab_tes ul li.on {
+    color: #f00;
+}
+
+.tab_test .tab>div {
+    /* 모두 숨기고 */
+display: none;
+}
+
+.tab_test .tab>div.on {
+    display: block;
+}
+
+*/
