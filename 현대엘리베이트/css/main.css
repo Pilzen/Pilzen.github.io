@@ -1,0 +1,114 @@
+/* Global CSS 설정 */
+:root {
+    --mc: #008850;
+    --wc: #f9f9f9;
+    /* mc : main color 지정. 사용법: color: var(--mc); */
+}
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.section {
+    padding: 100px 0;
+    letter-spacing: -0.025em;
+    /* 자간 거리를 줄임 */
+}
+
+.section h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 0 30px 0;
+}
+
+.section p {
+    line-height: 1.45em;
+}
+
+.section p.title {
+    line-height: 1;
+    font-size: 15px;
+    margin: 0 0 50px 0;
+}
+
+/* 배경 slide */
+.top_banner {
+    position: relative;
+    color: var(--wc);
+}
+
+.top_banner .top_banner_slide slick-track,
+.top_banner .top_banner_slide slick-slide {
+
+
+    transition: 0.01ms;
+
+}
+
+.top_banner .top_banner_slide a {
+    display: block;
+    height: 160px;
+    font-size: 0;
+}
+
+.top_banner .top_banner_slide .item01 {
+    background: url(../images/banner_01.png) no-repeat center center/cover;
+}
+
+.top_banner .top_banner_slide .item02 {
+    background: url(../images/banner_02.jpg) no-repeat center center/cover;
+}
+
+.top_banner .top_banner_slide .item03 {
+    background: url(../images/banner_03.png) no-repeat center center/cover;
+}
+
+.top_banner .close {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin: 0 0 0 600px;
+    transform: translateX(-100%);
+    font-size: 30px;
+}
+
+.top_banner .today_close {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin: 0 0 0 600px;
+    transform: translateX(-50%);
+}
+
+.top_banner .slick-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.top_banner .slick-dots>li {
+    display: inline-block;
+    font-size: 0;
+}
+
+
+.top_banner .slick-dots>li button {
+    border: none;
+    outline: none;
+    width: 2px;
+    height: 13px;
+    background: var(--wc);
+    margin: 0 5px;
+    transition: height 0.3s;
+}
+
+.top_banner .slick-dots>li.slick-active button {
+    width: 5px;
+}
