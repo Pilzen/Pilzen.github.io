@@ -51,7 +51,7 @@ p {
     line-height: 1.45;
 }
 
-.btn {
+/* .btn {
     display: inline-block;
     border: 1px solid #333;
     background: #333;
@@ -59,7 +59,7 @@ p {
     text-transform: uppercase;
     font-size: 14px;
     color: #fff;
-}
+} */
 
 .top_banner {
     background: #f9f9f9;
@@ -127,6 +127,10 @@ nav>ul {
     display: flex;
     gap: 30px;
 }
+.main_event .inner {
+    display: flex;
+    gap: 30px;
+}
 
 .main_event .case {}
 
@@ -184,7 +188,7 @@ nav>ul {
     }
 
     .inner {
-        border: 1px solid red;
+        border: 1px solid #ddd;
         width: auto;
         margin: 0 auto;
     }
@@ -203,24 +207,49 @@ nav>ul {
     .btn {
         display: inline-block;
         border: 1px solid #333;
-        background: #333;
+        background: #ddd;
         padding: 5px 20px;
         text-transform: uppercase;
         font-size: 14px;
+        color: #000;
+    }
+    .top_banner i {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 0;
+        right: 0;
+        padding: 10px;
+        font-size: 20px;
+        line-height: 1.0;
+        background: black;
         color: #fff;
+    }
+    .top_banner.on {
+        display: none;
+        transition: 1.5s;
     }
 
     .top_banner {
-        position: fixed;
-        top: 50%;
+        position: absolute;
+        top: 25%;
         left: 20px;
         right: 20px;
         transform: translateY(-50%, -50%);
-        padding: 50px 0;
+        padding: 40px 10px 40px 10px;
         background: #f9f9f9;
         line-height: 30px;
         font-size: 14px;
         z-index: 999;
+    }
+
+    .top_banner h2 {
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .top_banner p {
+        font-size: 15px;
+        font-weight: 300;
     }
 
     .top_banner .inner {
@@ -250,6 +279,7 @@ nav>ul {
 
     nav.on {
         left: 0;
+        transition: 2.0s;
     }
 
     nav>ul {
@@ -279,16 +309,62 @@ nav>ul {
         z-index: 999;
     }
 
+    .mopen span::before {
+        content: "";
+        position: absolute;
+        top: calc(50% - 0.7px);
+        left: 5px;
+        right: 5px;
+        height: 1px;
+        background: #000;
+    }
+    .mopen span::after {
+        content: "";
+        position: absolute;
+        top: calc(50% - 0.7px);
+        left: 5px;
+        right: 5px;
+        height: 1px;
+        background: #000;
+    }
+    .mopen.on span::before 
+    {
+        transform: rotate(45deg);
+        transition: 0.5s;
+    }
+    .mopen.on span::after 
+    {
+        transform: rotate(-45deg);
+        transition: 0.5s;
+    }
+
     .mopen::before {
-        content: "0";
-        font-size: 20px;
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        height: 1px;
+        background: #000;
+
+    }
+    .mopen::after {
+        content: "";
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+        right: 5px;
+        height: 1px;
+        background: #000;
 
     }
 
     .mopen.on::before {
-        content: "X";
-        font-size: 20px;
+        display: none;
+    }
 
+    .mopen.on::after {
+        display: none;
     }
 
     .main_visual {

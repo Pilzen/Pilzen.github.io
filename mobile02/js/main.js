@@ -7,12 +7,20 @@ document.querySelector('.mopen').addEventListener('click', function () {
     this.classList.toggle('on');
 })
 
-document.querySelector('.top_banner button').addEventListener('click', function () {
-
-    document.querySelector('.top_banner').style.Display: none;
+$('.top_banner i').on('click', function(){
+    $('.top_banner').addClass('on');
 })
 
-document.querySelector('.mopen').addEventListener('click', function () {
-    this.classList.toggle('on')
+$(window).on('resize', function(){
+    $('.top_banner').removeClass('on')
+})
+
+document.querySelector('.top_banner button').addEventListener('click', function () {
+
+    document.querySelector('.top_banner').styleDisplay.none;
+})
+
+document.querySelector('.mopen').addEventListener('click', function () { 
     document.querySelector('nav').classList.toggle('on')
+    this.classList.toggle('on')
 })
