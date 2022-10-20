@@ -2,6 +2,7 @@
 :root {
     --mc: #008850;
     --wc: #f9f9f9;
+    --dc: #444444;
     /* mc : main color 지정. 사용법: color: var(--mc); */
 }
 
@@ -46,9 +47,7 @@
 .top_banner .top_banner_slide slick-track,
 .top_banner .top_banner_slide slick-slide {
 
-
     transition: 0.01ms;
-
 }
 
 .top_banner .top_banner_slide a {
@@ -84,6 +83,8 @@
     left: 50%;
     margin: 0 0 0 600px;
     transform: translateX(-50%);
+    width: 150px;
+
 }
 
 .top_banner .slick-dots {
@@ -98,7 +99,6 @@
     font-size: 0;
 }
 
-
 .top_banner .slick-dots>li button {
     border: none;
     outline: none;
@@ -111,4 +111,137 @@
 
 .top_banner .slick-dots>li.slick-active button {
     width: 5px;
+}
+
+.top_banner .today_close label {
+    position: relative;
+}
+
+.top_banner .today_close label::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -35px;
+    width: 30px;
+    height: 30px;
+    background: var(--mc);
+    background: transparent;
+    border: 1px solid #f9f9f9;
+}
+
+.top_banner .today_close label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.top_banner .today_close input:checked+label::after {
+    border: 1px solid #333;
+}
+
+.header {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.header .bottom {
+    /* border: 5px solid red; */
+    position: relative;
+    line-height: 80px;
+    color: var(--wc);
+    background: rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid transparent;
+}
+
+.header .bottom.on {
+    background: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid transparent;
+    line-height: 60px;
+    color: var(--dc);
+    transition: 0.5s;
+}
+
+.header h1 {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    font-size: 0;
+}
+
+.header h1 a {
+    display: inline-block;
+    width: 188px;
+    height: 22px;
+    background: url(../images/logo01.png);
+    font-size: 0;
+    vertical-align: middle;
+}
+
+.header .bottom.on h1 a {
+    background: url(../images/logo02.png);
+}
+
+.header nav {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+.header .right {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    display: flex;
+    gap: 40px;
+}
+
+.header .right .xi-search {
+    font-size: 25px;
+}
+
+.header .right>li {
+    position: relative;
+}
+
+.header .right .link {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--wc);
+    line-height: 1.45;
+    padding: 10px 30px;
+    border: 2px solid var(--mc);
+    color: var(--dc);
+    text-transform: uppercase;
+
+}
+
+.header .right .link.on {
+    display: block;
+}
+
+.header .global {
+    cursor: pointer;
+}
+
+.header .bottom.on .link {
+    display: none;
+}
+
+.gnb>ul {
+    display: flex;
+    gap: 50px;
+}
+
+.main {
+    position: relative;
+    background: url(../images/main_01.jpg);
+    height: 150vh;
 }
