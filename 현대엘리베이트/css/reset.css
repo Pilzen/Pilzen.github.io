@@ -40,3 +40,8 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
     color: #444;
 }
+
+.slick-track,
+.slick-slide {
+    transition-delay: 30ms;
+}
