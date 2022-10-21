@@ -40,6 +40,7 @@
 
 /* 배경 slide */
 .top_banner {
+    border: 5px solid red;
     position: relative;
     color: var(--wc);
 }
@@ -69,6 +70,7 @@
 }
 
 .top_banner .close {
+    border: 2px solid blue;
     position: absolute;
     top: 40px;
     left: 50%;
@@ -76,16 +78,25 @@
     transform: translateX(-100%);
     font-size: 30px;
 }
+.top_banner .btn_today {
+    border: 2px solid red;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 0 0 600px;
+}
 
-.top_banner .today_close {
+
+/* .top_banner .today_close {
+    border: 2px solid red;
     position: absolute;
     bottom: 30px;
     left: 50%;
     margin: 0 0 0 600px;
     transform: translateX(-50%);
     width: 150px;
-
-}
+} */
 
 .top_banner .slick-dots {
     position: absolute;
@@ -142,7 +153,6 @@
 
 .header {
     position: fixed;
-
     top: 0;
     left: 0;
     right: 0;
@@ -220,7 +230,6 @@
     border: 2px solid var(--mc);
     color: var(--dc);
     text-transform: uppercase;
-
 }
 
 .header .right .link.on {
@@ -228,6 +237,7 @@
 }
 
 .header .global {
+    /* padding: 10px; */
     cursor: pointer;
 }
 
