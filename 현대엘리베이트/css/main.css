@@ -16,6 +16,22 @@
     flex-direction: row;
 }
 
+.btn-basic {
+    display: inline-block;
+    padding: 15px 30px;
+    color: var(--mc);
+    border: 1px solid var(--mc);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.btn-basic i {
+    font-size: 10px;
+    margin: 0 0 0 10px;
+    vertical-align: middle;
+    /* vertical-align: 2px; */
+}
+
 .section {
     padding: 100px 0;
     letter-spacing: -0.025em;
@@ -24,8 +40,12 @@
 
 .section h2 {
     font-size: 30px;
-    font-weight: 500;
-    margin: 0 0 30px 0;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .section p {
@@ -396,18 +416,141 @@
 .main_visual .wheel::after {
     content: "";
     position: absolute;
-    top: -60px;
+    top: -70px;
     left: 50%;
     transform: translateX(-50%);
     width: 3px;
     height: 15px;
     background: var(--wc);
-    border-radius: 15px;
-    animation: wheel 0.5s infinite;
+    /* border-radius: 15px; */
+    animation: wheel 1.5s infinite;
 }
 
 @keyframes wheel {
     to {
         top: -55px
     }
+}
+
+.main_business {}
+
+.main_business .inner figure {
+    flex: 1;
+}
+
+.main_business .inner .box {
+    margin: 0 0 50px 0;
+}
+
+.main_business .inner strong {
+    position: relative;
+    display: block;
+    /* inline은 상하 마진이 안 먹는다. 대산에 좌우 padding을 사용한다 */
+    margin: 0 0 15px 0;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.main_business .inner strong::after {
+    content: "";
+    position: absolute;
+    top: -75px;
+    left: calc(50% - 1px);
+    width: 2px;
+    height: 50px;
+    background: var(--mc);
+}
+
+.main_business .inner p {
+    margin: 0 0 25px 0;
+    padding: 0 50px;
+    font-size: 17px;
+    word-break: keep-all;
+}
+
+.main_business figure img {
+    transition: 0.2s;
+}
+
+.main_business figure:hover img {
+    transform: scale(1.25);
+}
+
+.main_business figure .box {
+    overflow: hidden;
+}
+
+.main_build {
+    border: 1px solid orange;
+    background: url(../images/section2_bg.jpg);
+}
+
+.main_build .wbox {
+    display: flex;
+    width: calc(100% - (100% - 1200px) / 2);
+    margin: 0 0 0 auto;
+    /* background: #ff0; */
+
+}
+
+.main_build .wbox .left {
+    width: 450px;
+    /* background: red; */
+}
+
+.main_build .wbox .left img {
+    height: 100%;
+}
+
+.main_build .wbox .right {
+    padding: 30px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+    /* background: #fff; */
+}
+
+.main_build .wbox .right .title {
+    color: var(--wc);
+}
+
+.main_build .wbox .right .title p {
+    margin: 0 0 30px 0;
+}
+
+.main_build .wbox .right .arrows {
+    display: inline-block;
+    border: 1px solid var(--wc);
+    margin: 0 0 50px 0;
+    font-size: 0;
+}
+
+.main_build .wbox .right .arrows i {
+    padding: 30px;
+    font-size: 15px;
+}
+
+.main_build .wbox .right .arrows i~i {
+    border-left: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.main_build .wbox .right .right_slider {
+    width: calc(100% + 100px);
+    margin: auto 0 0 0;
+}
+
+.main_build .wbox .left .box {
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.5);
+    margin: 0 20px 40px 0;
+}
+
+.main_build .wbox .right .box {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+    margin: 0 20px 40px 0;
+}
+
+.main_build .wbox .box strong {
+    font-size: 23px;
+    font-weight: 500;
 }

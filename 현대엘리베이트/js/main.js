@@ -31,7 +31,7 @@ $('.main_slide').slick({
 
 $('.main_slide').on('afterChange', function (e, s, c) {
     // console.log(c)
-    $('.main_visual .page li').eq(c).addClass('on').siblings.removeClass('on')
+    $('.main_visual .page li').eq(c).addClass('on').siblings().removeClass('on')
     $('.num strong').text("0" + (c + 1))
 })
 
@@ -45,6 +45,24 @@ $('.main_visual .arrows i:first-child').on('click', function () {
 })
 $('.main_visual .arrows i:last-child').on('click', function () {
     $('.main_slide').slick('slickNext')
+})
+
+$('.left_slider').slick({
+    arrows: false,
+    fade: true,
+    asNavFor: '.right_slider',
+});
+$('.right_slider').slick({
+    arrows: false,
+    slidesToShow: 5,
+    asNavFor: '.left_slider',
+});
+
+$('.main_build .wbox .right .arrows i:first-child').on('click', function () {
+    $('.left_slider').slick('slickPrev)')
+})
+$('.main_build .wbox .right .arrows i:last-child').on('click', function () {
+    $('.right_slider').slick('slickPrev)')
 })
 
 
