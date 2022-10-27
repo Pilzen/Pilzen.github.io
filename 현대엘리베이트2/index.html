@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현대엘리베이터 실습</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="top_banner">
+                <div class="top_banner_slide">
+                    <figure class="item01">
+                        <a href="">이벤트01</a>
+                    </figure>
+                    <figure class="item02">
+                        <a href="">이벤트02</a>
+                    </figure>
+                    <figure class="item03">
+                        <a href="">이벤트03</a>
+                    </figure>
+                </div>
+                <div class="close">
+                    <i class="xi-close"></i>
+                </div>
+                <div class="today_close">
+                    <input type="checkbox" id="tb">
+                    <label for="tb">오늘 하루 열지않기</label>
+                </div>
+            </div>
+            <div class="bottom">
+                <h1>
+                    <a href="/">
+                        현대엘리베이터
+                    </a>
+                </h1>
+                <nav class="gnb">
+                    <ul class="m_menu">
+                        <li><a href="">기업정보</a></li>
+                        <li><a href="">솔루션</a></li>
+                        <li><a href="">서비스</a></li>
+                        <li><a href="">혁신기술</a></li>
+                        <li><a href="">고객지원</a></li>
+                    </ul>
+                </nav>
+                <ul class="right">
+                    <li>
+                        <a href="">주요 프로젝트</a>
+                    </li>
+                    <li>
+                        <a href="">IR</a>
+                    </li>
+                    <li>
+                        <span class="grobal"><i class="xi-globus"></i> KOR</span>
+                        <ul class="link">
+                            <li><a href="">kor</a></li>
+                            <li><a href="">chn</a></li>
+                            <li><a href="">eng</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <i class="xi-search"></i>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main class="main">
+            <section class="main_visual">
+                <div class="main_slide">
+                    <figure class="itm01">
+                        <div class="inner">
+                            <p class="copy">
+                                01. The world expands<br />
+                                along the new path created<br />
+                                by Hyundai Elevator
+                            </p>
+                            <span>현대엘리베이터가 만든 새로운 길을 따라 세상은 위로 넓어집니다.</span>
+                        </div>
+                    </figure>
+                    <figure class="itm02">
+                        <div class="inner">
+                            <p class="copy">
+                                02. The world expands<br />
+                                along the new path created<br />
+                                by Hyundai Elevator
+                            </p>
+                            <span>현대엘리베이터가 만든 새로운 길을 따라 세상은 위로 넓어집니다.</span>
+                        </div>
+                    </figure>
+                    <figure class="itm03">
+                        <div class="inner">
+                            <p class="copy">
+                                03. The world expands<br />
+                                along the new path created<br />
+                                by Hyundai Elevator
+                            </p>
+                            <span>현대엘리베이터가 만든 새로운 길을 따라 세상은 위로 넓어집니다.</span>
+                        </div>
+                    </figure>
+                </div>
+                <div class="arrows">
+                    <i class="xi-angle-left-thin"></i>
+                    <i class="xi-angle-right-thin"></i>
+                </div>
+                <ul class="page">
+                    <li class="on"><span>바라얍 메르디안 호텔 (터키)</span></li>
+                    <li><span>부산국제금융센터 (BIFC)</span></li>
+                    <li><span>서울드래곤시티(용산호텔)</span></li>
+                </ul>
+                <div class="num">
+                    <strong>01</strong> / <span>03</span>
+                </div>
+                <div class="wheel">
+                    scroll down
+                </div>
+            </section>
+            <section class="main_business section text-center">
+                <h2>사람과 사람을 연결하는 종합 승강기 기업</h2>
+                <p class="title">최고의 기술과 서비스로 편리하고 풍요로운 세상을 만들어갑니다.</p>
+                <div class="inner flex">
+                    <figure>
+                        <div class="box">
+                            <img src="./images/section1_1.jpg" alt="">
+                        </div>
+                        <strong>엘리베이터</strong>
+                        <p>
+                            단순한 수직운송수단을 넘어 빌딩의 가치를 높여 드립니다.
+                        </p>
+                        <a href="#!" class="btn-basic">자세히보기 <i class="xi-angle-right"></i></a>
+                    </figure>
+                    <figure>
+                        <div class="box">
+                            <img src="./images/section1_2.jpg" alt="">
+                        </div>
+                        <strong>에스컬레이터 &amp; 무빙워크</strong>
+                        <p>
+                            편안한 승차감과 안전성, 경제성으로 최고의 고객감동을 실현합니다.
+                        </p>
+                        <a href="#!" class="btn-basic">자세히보기 <i class="xi-angle-right"></i></a>
+                    </figure>
+                    <figure>
+                        <div class="box">
+                            <img src="./images/section1_3.jpg" alt="">
+                        </div>
+                        <strong>주차시스템</strong>
+                        <p>
+                            다양한 제품으로 주차 공간 확보에 대한 고민을 해결해 드립니다.
+                        </p>
+                        <a href="#!" class="btn-basic">자세히보기 <i class="xi-angle-right"></i></a>
+                    </figure>
+                </div>
+            </section>
+            <section class="main_build section">
+                <div class="wbox">
+                    <div class="left">
+                        <div class="left_slider">
+                            <figure>
+                                <div class="box">
+                                    <img src="./images/slide_01.jpg" alt="">
+                                </div>
+                                <strong>서울드레곤시티(용산)</strong>
+                            </figure>
+                            <figure>
+                                <div class="box">
+                                    <img src="./images/slide_02.jpg" alt="">
+                                </div>
+                                <strong>서울드레곤시티(용산)</strong>
+                            </figure>
+                            <figure>
+                                <div class="box">
+                                    <img src="./images/slide_03.jpg" alt="">
+                                </div>
+                                <strong>서울드레곤시티(용산)</strong>
+                            </figure>
+                            <figure>
+                                <div class="box">
+                                    <img src="./images/slide_04.jpg" alt="">
+                                </div>
+                                <strong>서울드레곤시티(용산)</strong>
+                            </figure>
+                            <figure>
+                                <div class="box">
+                                    <img src="./images/slide_05.jpg" alt="">
+                                </div>
+                                <strong>서울드레곤시티(용산)</strong>
+                            </figure>
+                            <figure>
+                                <div class="box">
+                                    <img src="./images/slide_06.jpg" alt="">
+                                </div>
+                                <strong>서울드레곤시티(용산)</strong>
+                            </figure>
+                            <figure>
+                                <div class="box">
+                                    <img src="./images/slide_07.jpg" alt="">
+                                </div>
+                                <strong>서울드레곤시티(용산)</strong>
+                            </figure>
+                            <figure>
+                                <div class="box">
+                                    <img src="./images/slide_08.jpg" alt="">
+                                </div>
+                                <strong>서울드레곤시티(용산)</strong>
+                            </figure>
+                            <figure>
+                                <div class="box">
+                                    <img src="./images/slide_09.jpg" alt="">
+                                </div>
+                                <strong>서울드레곤시티(용산)</strong>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="title">
+                            <h2>건물의 가치를 높이는 현대엘리베이터</h2>
+                            <p>특별한 기술을 실현할수록 여러분의 삶의 무대도 특별해 집니다.</p>
+                            <div class="arrows">
+                                <i class="xi-arrow-left"></i>
+                                <i class="xi-arrow-right"></i>
+                            </div>
+                        </div>
+                        <div class="right_slider">
+
+                            <figure>
+                                <div class="box">
+                                    <img src="./images/slide_02.jpg" alt="">
+                                </div>
+                                <strong>서울드레곤시티(용산)</strong>
+                            </figure>
+                            <figure>
+                                <div class="box">
+                                    <img src="./images/slide_03.jpg" alt="">
+                                </div>
+                                <strong>서울드레곤시티(용산)</strong>
+                            </figure>
+                            <figure>
+                                <div class="box">
+                                    <img src="./images/slide_04.jpg" alt="">
+                                </div>
+                                <strong>서울드레곤시티(용산)</strong>
+                            </figure>
+                            <figure>
+                                <div class="box">
+                                    <img src="./images/slide_05.jpg" alt="">
+                                </div>
+                                <strong>서울드레곤시티(용산)</strong>
+                            </figure>
+                            <figure>
+                                <div class="box">
+                                    <img src="./images/slide_06.jpg" alt="">
+                                </div>
+                                <strong>서울드레곤시티(용산)</strong>
+                            </figure>
+                            <figure>
+                                <div class="box">
+                                    <img src="./images/slide_07.jpg" alt="">
+                                </div>
+                                <strong>서울드레곤시티(용산)</strong>
+                            </figure>
+                            <figure>
+                                <div class="box">
+                                    <img src="./images/slide_08.jpg" alt="">
+                                </div>
+                                <strong>서울드레곤시티(용산)</strong>
+                            </figure>
+                            <figure>
+                                <div class="box">
+                                    <img src="./images/slide_09.jpg" alt="">
+                                </div>
+                                <strong>서울드레곤시티(용산)</strong>
+                            </figure>
+                            <figure>
+                                <div class="box">
+                                    <img src="./images/slide_01.jpg" alt="">
+                                </div>
+                                <strong>서울드레곤시티(용산)</strong>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main_solution section text-center bg-gray">
+                <h2>클린 무빙 솔로션</h2>
+                <p class="title">접촉 없이 편하게 이동합니다.</p>
+                <div class="solution_slider">
+                    <figure>
+                        <img src="./images/section2_01.jpg" alt="">
+                    </figure>
+                    <figure>
+                        <img src="./images/section2_02.jpg" alt="">
+                    </figure>
+                    <figure>
+                        <img src="./images/section2_03.jpg" alt="">
+                    </figure>
+                    <figure>
+                        <img src="./images/section2_04.jpg" alt="">
+                    </figure>
+                    <figure>
+                        <img src="./images/section2_05.jpg" alt="">
+                    </figure>
+                    <figure>
+                        <img src="./images/section2_06.jpg" alt="">
+                    </figure>
+                    <figure>
+                        <img src="./images/section2_07.jpg" alt="">
+                    </figure>
+                    <figure>
+                        <img src="./images/section2_08.jpg" alt="">
+                    </figure>
+                    <figure>
+                        <img src="./images/section2_09.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="solution_con">
+                    <div class="box">
+                        <div class="case">
+                            <div class="con on">
+                                <h3>
+                                    1. 울트라 UV 클리너
+                                </h3>
+                                <p>층 표시, 절전 표시, CCTV 작동 등 종합 디스플레이 장치와 초음파 해충방지 및 무오존 음이온 공기청정기 기능은 엘리베이터의 환경을 편리하고 쾌적하게
+                                    유지할 수 있습니다. </p>
+                                <a href="" class="btn-basic">자세히보기 <i class="xi-angle-right"></i></a>
+                            </div>
+                            <div class="con">
+                                <h3>
+                                    2. 모션 콜 버튼
+                                </h3>
+                                <p>모션인식센서를 활용하여, 손을 위아래로 움직이는 동작만으로 버튼인식이 가능하기 때문에, 박테리아와 바이러스로부터 자유롭습니다. </p>
+                                <a href="" class="btn-basic">자세히보기 <i class="xi-angle-right"></i></a>
+                            </div>
+                            <div class="con">
+                                <h3>
+                                    3. 항바이러스 핸드레일
+                                </h3>
+                                <p>에스컬레이터 핸드레일의 각종 먼지, 오염물질을 완벽하게 세척, 살균해줍니다. </p>
+                                <a href="" class="btn-basic">자세히보기 <i class="xi-angle-right"></i></a>
+                            </div>
+                            <div class="con">
+                                <h3>
+                                    4. 울트라 UV 클리너
+                                </h3>
+                                <p>층 표시, 절전 표시, CCTV 작동 등 종합 디스플레이 장치와 초음파 해충방지 및 무오존 음이온 공기청정기 기능은 엘리베이터의 환경을 편리하고 쾌적하게
+                                    유지할 수 있습니다. </p>
+                                <a href="" class="btn-basic">자세히보기 <i class="xi-angle-right"></i></a>
+                            </div>
+                            <div class="con">
+                                <h3>
+                                    5. 울트라 UV 클리너
+                                </h3>
+                                <p>에스컬레이터 핸드레일의 각종 먼지, 오염물질을 완벽하게 세척, 살균해줍니다. </p>
+                                <a href="" class="btn-basic">자세히보기 <i class="xi-angle-right"></i></a>
+                            </div>
+                            <div class="con">
+                                <h3>
+                                    6. 울트라 UV 클리너
+                                </h3>
+                                <p>모션인식센서를 활용하여, 손을 위아래로 움직이는 동작만으로 버튼인식이 가능하기 때문에, 박테리아와 바이러스로부터 자유롭습니다. </p>
+                                <a href="" class="btn-basic">자세히보기 <i class="xi-angle-right"></i></a>
+                            </div>
+                            <div class="con">
+                                <h3>
+                                    7. 울트라 UV 클리너
+                                </h3>
+                                <p>에스컬레이터 핸드레일의 각종 먼지, 오염물질을 완벽하게 세척, 살균해줍니다. </p>
+                                <a href="" class="btn-basic">자세히보기 <i class="xi-angle-right"></i></a>
+                            </div>
+                            <div class="con">
+                                <h3>
+                                    8. 울트라 UV 클리너
+                                </h3>
+                                <p>에스컬레이터 핸드레일의 각종 먼지, 오염물질을 완벽하게 세척, 살균해줍니다. </p>
+                                <a href="" class="btn-basic">자세히보기 <i class="xi-angle-right"></i></a>
+                            </div>
+                            <div class="con">
+                                <h3>
+                                    9. 울트라 UV 클리너
+                                </h3>
+                                <p>에스컬레이터 핸드레일의 각종 먼지, 오염물질을 완벽하게 세척, 살균해줍니다. </p>
+                                <a href="" class="btn-basic">자세히보기 <i class="xi-angle-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="num">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="arrows">
+                    <div class="left">
+                        left arrow
+                    </div>
+                    <div class="right">
+                        right arrow
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer"></footer>
+        <div class="to_top">
+            <i class="xi-long-arrow-up"></i>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<!-- www.tailwindcss.com -->
