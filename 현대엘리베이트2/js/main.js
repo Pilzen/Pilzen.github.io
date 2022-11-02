@@ -65,42 +65,60 @@ $(function () {
         $('.left_slider').slick('slickNext')
     });
 
-
-    $('.solution_slider').slick({
+    $('.solusion_slider').slick({
         centerMode: true,
         centerPadding: '300px',
         arrows: false,
         dots: true,
-    })
-    $('.solution_slider').on('afterChange', function (e, s, c) {
-        console.log(c)
-        $('.solution_con .box').eq(c).addClass('on').siblings().removeClass('on');
+    });
 
-    })
+    $('.solusion_slider').on('afterChange', function (e, s, c) {
+        $('.solution_con .con').eq(c).addClass('on').siblings().removeClass('on');
+    });
 
     $('.main_solution .arrows div:first-child').on('click', function () {
-        $('.solution_slider').slick('slickPrev')
-    });
+        $('.solusion_slider').slick('slickPrev')
+    })
     $('.main_solution .arrows div:last-child').on('click', function () {
-        $('.solution_slider').slick('slickNext')
+        $('.solusion_slider').slick('slickNext')
     });
 
     $('.to_top').on('click', function () {
         $('html, body').animate({ scrollTop: 0 }, 1000)
-    })
+    });
 
     $(window).on('scroll', function () {
-        var sct = $(window).scrollTop()
-
+        var sct = $(window).scrollTop();
         sct > 300 ? $('.to_top').fadeIn() : $('.to_top').fadeOut()
+    });
 
 
-        // if (sct > 300) {
-        //     $('.to_top').fadeIn()
-        // }
-        // else {
-        //     $('.to_top').fadeOut()
-        // }
-    })
+    $('#bgndVideo').YTPlayer({
+        videoURL: 'https://youtu.be/raw3Nu0_mBQ',
+        containment: '.movie',
+        autoPlay: true,
+        mute: true,
+        startAt: 0,
+        opacity: 1,
+        playOnlyIfVisible: true,
+    });
+
+    var swh = true;
+
+    $('.main_promotion .movie_case .btn').on('click', function () {
+        $(this).toggleClass('on');
+        if (swh) {
+            $('#bgndVideo').YTPPause();
+        } else {
+            $('#bgndVideo').YTPPlay();
+        }
+        swh = !swh;
+    });
+
+    $('.main_promotion .title>div').on('click', function () {
+        $(this).addClass('on').siblings().removeClass('on');
+    });
+
+
 
 })
