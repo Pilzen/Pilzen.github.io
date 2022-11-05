@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>티누리 홈페이지</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="./js/jquery.cookie.js"></script>
+    <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="top_banner">
+                <div class="top_banner_slide">
+                    <figure class="item01">
+                        <a href="">이벤트01</a>
+                    </figure>
+                    <figure class="item02">
+                        <a href="">이벤트02</a>
+                    </figure>
+                    <figure class="item03">
+                        <a href="">이벤트03</a>
+                    </figure>
+                </div>
+                <div class="close">
+                    <i class="xi-close"></i>
+                </div>
+                <div class="today_close">
+                    <input type="checkbox" id="tb">
+                    <label for="tb">오늘 하루 열지않기</label>
+                </div>
+            </div>
+            <div class="bottom">
+                <h1>
+                    <a href="/">
+                        티누리주식회사
+                    </a>
+                </h1>
+                <nav class="gnb">
+                    <ul class="m_menu">
+                        <li>
+                            <a href="">임가공아웃소싱</a>
+                            <ul class="submenu">
+                                <li><a href="">smenu01</a></li>
+                                <li><a href="">smenu02</a></li>
+                                <li><a href="">smenu03</a></li>
+                                <li><a href="">smenu04</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">전문가아웃소싱</a>
+                            <ul class="submenu">
+                                <li><a href="">smenu01</a></li>
+                                <li><a href="">smenu02</a></li>
+                                <li><a href="">smenu03</a></li>
+                                <li><a href="">smenu04</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">신상품전시</a>
+                            <ul class="submenu">
+                                <li><a href="">smenu01</a></li>
+                                <li><a href="">smenu02</a></li>
+                                <li><a href="">smenu03</a></li>
+                                <li><a href="">smenu04</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">중고기계전시</a>
+                            <ul class="submenu">
+                                <li><a href="">smenu01</a></li>
+                                <li><a href="">smenu02</a></li>
+                                <li><a href="">smenu03</a></li>
+                                <li><a href="">smenu04</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="right">
+                    <li>
+                        <a href="">회원가입</a>
+                    </li>
+                    <li>
+                        <a href="">로그인</a>
+                    </li>
+                    <li>
+                        <span class="grobal"><i class="xi-globus"></i> KOR</span>
+                        <ul class="link">
+                            <li><a href="">kor</a></li>
+                            <li><a href="">chn</a></li>
+                            <li><a href="">eng</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <i class="xi-search"></i>
+                    </li>
+                </ul>
+            </div>
+            <button class="mopen">
+                <i class="xi-bars"></i>
+            </button>
+        </header>
+        <main class="main">
+            <section class="main_visual">
+                <div class="main_slide">
+                    <figure class="itm01">
+                        <div class="inner">
+                            <p class="copy">
+                                기업과 기업, <br> 기업과 사람을 연결하는 아웃소싱 전문 플랫폼
+                            </p>
+                            <span>최고의 기술 전문가를 찾을 수 있습니다.<br> 최고의 제조 파트너와 함께 기업 가치를 높일 수 있습니다. <br>중소기업에서 만든 신상품을 전시합니다.</span>
+                        </div>
+                    </figure>
+                    <figure class="itm02">
+                        <div class="inner">
+                            <p class="copy">
+                                01. 기업과 기업을 연결해 드립니다. 
+                            </p>
+                            <span>생산 및 제조의 전문 기업를 찾을 수 있습니다.<br> 최고의 제조 파트너와 함께 <br> 기업 가치를 높일 수 있습니다.</span>
+                        </div>
+                    </figure>
+                    <figure class="itm03">
+                        <div class="inner">
+                            <p class="copy">
+                                02. 기업과 사람을 연결해 드립니다.
+                            </p>
+                            <span>최고의 기술 전문가를 찾을 수 있습니다. <br> 전문가와 함께 기업 가치를 높일 수 있습니다.</span>
+                        </div>
+                    </figure>
+                    <figure class="itm04">
+                        <div class="inner">
+                            <p class="copy">
+                                03. 기업에서 개발한 신상품 전시합니다.
+                            </p>
+                            <span>중소기업에서 만든 신상품을 전시합니다.</span>
+                        </div>
+                    </figure>
+                </div>
+                <div class="arrows">
+                    <i class="xi-angle-left-thin"></i>
+                    <i class="xi-angle-right-thin"></i>
+                </div>
+                <ul class="page">
+                    <li class="on"><span>00</span></li>
+                    <li><span>01</span></li>
+                    <li><span>02</span></li>
+                    <li><span>03</span></li>
+                </ul>
+                <div class="num">
+                    <strong>01</strong> / <span>04</span>
+                </div>
+                <div class="wheel">
+                    scroll down
+                </div>
+            </section>
+            <section class="main_business section text-center">
+                <h2>기업과 사람과 상품을 연결하는 아웃소싱 전문 플랫폼</h2>
+                <p class="title">풍부한 중소기업 제조 네트워크와 <br> 우수한 기술 전문가 그룹 및 제품을 연결하여 기업가치를 높일 수 있습니다.</p>
+                <div class="inner flex">
+                    <figure>
+                        <div class="box">
+                            <img src="./img/business_icon01.png" alt="">
+                        </div>
+                        <strong>임가공업체 찾기</strong>
+                        <p>
+                            설계, 제조 및 생산에 필요한 업체를 연결해드립니다.
+                        </p>
+                        <a href="#!" class="btn-basic">자세히보기 <i class="xi-angle-right"></i></a>
+                    </figure>
+                    <figure>
+                        <div class="box">
+                            <img src="./img/business_icon02.png" alt="">
+                        </div>
+                        <strong>전문가 찾기</strong>
+                        <p>
+                            설계 및 제조관련 전문가를 찾을 수 있습니다.
+                        </p>
+                        <a href="#!" class="btn-basic">자세히보기 <i class="xi-angle-right"></i></a>
+                    </figure>
+                    <figure>
+                        <div class="box">
+                            <img src="./img/business_icon03.png" alt="">
+                        </div>
+                        <strong>신상품 전시</strong>
+                        <p>
+                            중소기업 신상품을 전시하여 판매합니다.
+                        </p>
+                        <a href="#!" class="btn-basic">자세히보기 <i class="xi-angle-right"></i></a>
+                    </figure>
+                    <figure>
+                        <div class="box">
+                            <img src="./img/business_icon04.png" alt="">
+                        </div>
+                        <strong>중고기계 전시</strong>
+                        <p>
+                            다양한 중고 기계 정보를 찾을 수 있습니다.
+                        </p>
+                        <a href="#!" class="btn-basic">자세히보기 <i class="xi-angle-right"></i></a>
+                    </figure>
+                </div>
+            </section>
+            <section class="main_build section">
+                <div class="wbox">
+                    <div class="left">
+                        <div class="left_slider">
+                            <figure>
+                                <div class="box">
+                                    <img src="./img/lesedilarona01.jpg" alt="">
+                                </div>
+                                <strong>머시닝센터 7.5호</strong>
+                            </figure>
+                            <figure>
+                                <div class="box">
+                                    <img src="./img/lesedilarona02.jpg" alt="">
+                                </div>
+                                <strong>머시닝센터 6.5호</strong>
+                            </figure>
+                            <figure>
+                                <div class="box">
+                                    <img src="./img/lesedilarona03.jpg" alt="">
+                                </div>
+                                <strong>탭핑센터</strong>
+                            </figure>
+                            <figure>
+                                <div class="box">
+                                    <img src="./img/lesedilarona04.jpg" alt="">
+                                </div>
+                                <strong>CNC 선반 갱타입</strong>
+                            </figure>
+                            <figure>
+                                <div class="box">
+                                    <img src="./img/lesedilarona05.jpg" alt="">
+                                </div>
+                                <strong>성형 연삭기</strong>
+                            </figure>
+                            <figure>
+                                <div class="box">
+                                    <img src="./img/lesedilarona06.jpg" alt="">
+                                </div>
+                                <strong>유압식 레이디알 드릴링1100</strong>
+                            </figure>
+                            <figure>
+                                <div class="box">
+                                    <img src="./img/lesedilarona01.jpg" alt="">
+                                </div>
+                                <strong>머시닝센터 7.5호</strong>
+                            </figure>
+                            <figure>
+                                <div class="box">
+                                    <img src="./img/lesedilarona02.jpg" alt="">
+                                </div>
+                                <strong>머시닝센터 6.5호</strong>
+                            </figure>
+                            <figure>
+                                <div class="box">
+                                    <img src="./img/lesedilarona03.jpg" alt="">
+                                </div>
+                                <strong>탭핑센터</strong>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="title">
+                            <h2>가성비 높은 중고 기계를 전시합니다</h2>
+                            <p>특별한 기술을 실현할수록 여러분의 삶의 무대도 특별해 집니다.</p>
+                            <div class="arrows">
+                                <i class="xi-arrow-left"></i>
+                                <i class="xi-arrow-right"></i>
+                            </div>
+                        </div>
+                        <div class="right_slider">
+                            <figure>
+                                <div class="box">
+                                    <img src="./img/lesedilarona01.jpg" alt="">
+                                </div>
+                                <strong>머시닝센터 7.5호</strong>
+                            </figure>
+                            <figure>
+                                <div class="box">
+                                    <img src="./img/lesedilarona02.jpg" alt="">
+                                </div>
+                                <strong>머시닝센터 6.5호</strong>
+                            </figure>
+                            <figure>
+                                <div class="box">
+                                    <img src="./img/lesedilarona03.jpg" alt="">
+                                </div>
+                                <strong>탭핑센터</strong>
+                            </figure>
+                            <figure>
+                                <div class="box">
+                                    <img src="./img/lesedilarona04.jpg" alt="">
+                                </div>
+                                <strong>CNC 선반 갱타입</strong>
+                            </figure>
+                            <figure>
+                                <div class="box">
+                                    <img src="./img/lesedilarona05.jpg" alt="">
+                                </div>
+                                <strong>성형 연삭기</strong>
+                            </figure>
+                            <figure>
+                                <div class="box">
+                                    <img src="./img/lesedilarona06.jpg" alt="">
+                                </div>
+                                <strong>유압식 레이디알 드릴링1100</strong>
+                            </figure>
+                            <figure>
+                                <div class="box">
+                                    <img src="./img/lesedilarona01.jpg" alt="">
+                                </div>
+                                <strong>머시닝센터 7.5호</strong>
+                            </figure>
+                            <figure>
+                                <div class="box">
+                                    <img src="./img/lesedilarona02.jpg" alt="">
+                                </div>
+                                <strong>머시닝센터 6.5호</strong>
+                            </figure>
+                            <figure>
+                                <div class="box">
+                                    <img src="./img/lesedilarona03.jpg" alt="">
+                                </div>
+                                <strong>탭핑센터</strong>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 신상품 전시 section -->
+            <section class="new_product section text-center bg-gray">
+                <h2>Brand New Products</h3>
+                <p>중소기업에서 만든 신상품을 전시합니다.</p>
+                <div class="prod_slide">
+                    <figure>
+                        <img src="./img/product_01.jpg" alt="">
+                    </figure>
+                    <figure>
+                        <img src="./img/product_02.jpg" alt="">
+                    </figure>
+                    <figure>
+                        <img src="./img/product_03.jpg" alt="">
+                    </figure>
+                    <figure>
+                        <img src="./img/product_04.jpg" alt="">
+                    </figure>
+                    <figure>
+                        <img src="./img/product_05.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="prod_exp">
+                    <div class="box">
+                        <div class="case">
+                            <div class="con on">
+                                <h3>01. 계산기</h3>
+                                <p>인공지능 계산기</p>
+                                <a href="" class="btn-basic">
+                                    자세히보기 <i class="xi-angle-right"></i>                                
+                                </a>
+                            </div>
+                            <div class="con">
+                                <h3>02. 전기자동차</h3>
+                                <p>자율 주행 자동차</p>
+                                <a href="" class="btn-basic">
+                                    자세히보기 <i class="xi-angle-right"></i>                                
+                                </a>
+                            </div>
+                            <div class="con">
+                                <h3>03. 하이브리드</h3>
+                                <p>하이브리드 3D 플라스틱 제조</p>
+                                <a href="" class="btn-basic">
+                                    자세히보기 <i class="xi-angle-right"></i>                                
+                                </a>
+                            </div>
+                            <div class="con">
+                                <h3>04. 트렁크 박스</h3>
+                                <p>수납공간이 넉넉한 트렁크</p>
+                                <a href="" class="btn-basic">
+                                    자세히보기 <i class="xi-angle-right"></i>                                
+                                </a>
+                            </div>
+                            <div class="con">
+                                <h3>05. 지문인식</h3>
+                                <p>인공지능 지문 인식기</p>
+                                <a href="" class="btn-basic">
+                                    자세히보기 <i class="xi-angle-right"></i>                                
+                                </a>
+                            </div>
+                        </div>
+                        <div class="num">
+
+                        </div>
+                    </div>                    
+                </div>
+                <div class="arrows">
+                    <div class="left">
+                        left arrow
+                    </div>
+                    <div class="right">
+                        right arrow
+                    </div>
+                </div>                
+            </section>
+
+        </main>
+        <footer class="footer">
+            <div class="ft_top">
+                <div class="inner flex">
+                    <ul class="left">
+                        <li><a href="">무통장 입금 </a></li>
+                        <li><a href="">구매가이드</a></li>
+                        <li>고객 연락처 <strong class="mc">010-3999-6308</strong></li>
+                    </ul>
+                    <ul class="right">
+                        <li>
+                            <a href="#!">애용약관</a>
+                            <div class="box">
+                                <ul>
+                                    <li><a href="">이용약관</a></li>
+                                    <li><a href="">고객센터</a></li>
+                                    <li><a href="">개인정보처리방침</a></li>
+                                </ul>
+                                <i class="xi-close"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#!">정보광장</a>
+                            <div class="box">
+                                <ul>
+                                    <li><a href="">임가공업체 제휴방법</a></li>
+                                    <li><a href="">전문가 활용방법</a></li>
+                                    <li><a href="">3D제조 활용방법</a></li>
+                                    <li><a href="">신상품 구매방법</a></li>
+                                    <li><a href="">중고기계 구매방법</a></li>
+                                </ul>
+                                <i class="xi-close"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#!">회원가입 공지사항</a>
+                            <div class="box">
+                                <ul>
+                                    <li><a href="">기업회원가업 방법 </a></li>
+                                    <li><a href="">임가공업체 등록 방법</a></li>
+                                    <li><a href="">전문가 회원 가입방법</a></li>
+                                    <li><a href="">신상품 등록 방법</a></li>
+                                </ul>
+                                <i class="xi-close"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ft_bottom">
+                <div class="inner flex">
+                    <div class="left">
+                        <address>경상남도 창원시 성산구 창이대로 707번길 26-5 티누리 주식회사</address>
+                        <div class="copy">COPYRIGHT &copy; 2022 TNURI CO.,LTD. ALL RIGHTS RESERVED</div>
+                    </div>
+                    <ul class="right">
+                        <li><a href=""><i class="xi-youtube-play"></i></a></li>
+                        <li><a href=""><i class="xi-facebook"></i></a></li>
+                        <li><a href=""><i class="xi-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <div class="to_top">
+            <i class="xi-long-arrow-up"></i>
+        </div>
+        <div class="popup_case">
+            <div class="popup">
+                <figure>
+                    <img src="./img/popup.png" alt="">
+                </figure>
+                <div class="box">
+                    <label><input type="checkbox"> 오늘 하루 열지 않기</label>
+                    <i class="xi-close"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
