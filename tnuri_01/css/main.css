@@ -1119,7 +1119,7 @@ footer .ft_top .right .box>ul {
     }
 
     .header nav>ul>li .submenu {
-        position: static;
+            position: static;
             top: 90px;
             left: 50%;
             transform: translate(0, 0);

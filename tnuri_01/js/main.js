@@ -171,6 +171,7 @@ $(function () {
     });
 
     $('.mopen').on('click', function () {
+        console.log('.mopen')
         $('nav').toggleClass('on')
     })
 
