@@ -882,6 +882,7 @@ footer .ft_top .right .box>ul {
     background: var(--mc);
     height: 2px;
 }
+
 .popup_case {
     position: fixed;
     top: 0;
@@ -896,11 +897,12 @@ footer .ft_top .right .box>ul {
 
 .popup {
     position: absolute;
-    width: 400px;
+    width: 290px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 999;
+    display: none;
 }
 
 .popup .box {
@@ -1789,15 +1791,18 @@ footer .ft_top .right .box>ul {
         right: 15px;
         transform: translate(0, -50%);
         z-index: 999;
+        display: none;
     }
 
     .popup .box {
 
         vertical-align: middle;
+        display: none;
     }
 
     .popup .box input {
         vertical-align: middle;
+        display: none;
     }
 
     .mopen {
