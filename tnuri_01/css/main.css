@@ -605,6 +605,40 @@
     margin: auto 0 0 0;
 }
 
+/* sub02_content: BLANK */
+
+.sub02_content {
+    padding: 100px 0;
+    background: url(../img/busan_view01.jpg) no-repeat fixed center center/cover;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+    /* filter: grayscale(1); */
+}
+
+.sub02_content h2 {
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 1em;
+    margin: 0 0 15px 0;
+}
+
+.sub02_content p {
+    font-size: 20px;
+    line-height: 1.45;
+    color: white;
+    margin: 0 0 15px 0;
+}
+
+.sub02_content i {
+    padding: 5px;
+    border-radius: 50%;
+    margin: 0 0 0 10px;
+    background: #f00;
+    transform: translateY(2px);
+}
+
+
 /* 신상품 전시 section */
 .new_product {
     /* border: 1px solid purple; */
@@ -889,7 +923,7 @@ footer .ft_top .right .box>ul {
     left: 0;
     right: 0;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
+    /* background: rgba(0, 0, 0, 0.5); */
     z-index: 999;
 
     display: none;
